@@ -1,4 +1,4 @@
-# JavaScript Homework - JavaScript and DOM Manipulation
+# JavaScript and DOM Manipulation
 
 ## Background
 
@@ -14,7 +14,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 ### Before You Begin
 
-1. Create a new repository for this project called `javascript-challenge`. **Do not add this homework to an existing repository**.
+1. Create a new repository for this project called `javascript-challenge`.
 
 2. Clone the new repository to your computer.
 
@@ -38,7 +38,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 * Complete all of Level 1 criteria.
 
-* Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
+* Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can set multiple filters and search for UFO sightings using the following criteria based on the table columns:
 
   1. `date/time`
   2. `city`
@@ -53,11 +53,3 @@ You can handle this... right? The planet Earth needs to know what we have found!
 * [UFO Sightings Data](StarterCode/static/js/data.js)
 
 - - -
-
-**Good luck!**
-
-- - -
-
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
