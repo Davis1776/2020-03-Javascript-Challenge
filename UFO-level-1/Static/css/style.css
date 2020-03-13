@@ -43,7 +43,7 @@ body {
   margin: 0;
 }
 
-/* This CSS styles the ufo icon in the navbar */
+/* This CSS styles the UFO icon in the navbar */
 .nav-ufo {
   position: absolute;
   bottom: 5px;
@@ -51,6 +51,14 @@ body {
   width: 35px;
   color: white;
 }
+.nav-ufo2 {
+  position: absolute;
+  bottom: 5px;
+  left: 200px;
+  width: 35px;
+  color: white;
+}
+
 
 /* Adding styles to the aside and filter form */
 .ufo-form {
@@ -98,10 +106,11 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/UFOimage1.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
+  color: midnightblue;
 }
 
 .hero h1 {
