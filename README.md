@@ -33,6 +33,7 @@ Write code that will create a dynamic table based upon a sample json dataset of 
   * Make sure to have columns for `date/time`, `city`, `state`, `country`, `shape`, and `comment` at the very least.
 
 * Use a date form in my HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
+# <p align="center"> ![Level 1 Filter](UFO-level-1/Static/images/FilterPanelScreenshot1.png) </p>
 
 ### Level 2: Multiple Search Categories (Optional)
 
@@ -45,7 +46,6 @@ Write code that will create a dynamic table based upon a sample json dataset of 
   3. `state`
   4. `country`
   5. `shape`
-
 # <p align="center"> ![Level 2 Filter](UFO-level-1/Static/images/FilterPanelScreenshot2.png) </p>
 
 - - -
