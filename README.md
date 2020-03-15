@@ -24,7 +24,7 @@ Write code that will create a dynamic table based upon a sample json dataset of 
 
 5. Push the above changes to GitHub.
 
-### Level 1: Automatic Table and Date Search (Required)
+### Level 1: Automatic Table and Date Search
 
 * Create a HTML web page.
 
@@ -35,7 +35,7 @@ Write code that will create a dynamic table based upon a sample json dataset of 
 * Use a date form in my HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 # <p align="center"> ![Level 1 Filter](UFO-level-1/Static/images/FilterPanelScreenshot1.png) </p>
 
-### Level 2: Multiple Search Categories (Optional)
+### Level 2: Multiple Search Categories
 
 * Complete all of Level 1 criteria.
 
@@ -63,7 +63,7 @@ Write code that will create a dynamic table based upon a sample json dataset of 
 
 * GitHub
 
-## Authors
+## Author
 
 * **Michael Davis** - [Davis1776](https://github.com/Davis1776)
 
