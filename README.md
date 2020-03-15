@@ -1,4 +1,4 @@
-# <p align="center"><![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)></p>
+# <p align="center"> ![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png) </p>
 
 ![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)
 
