@@ -1,60 +1,89 @@
 // from data.js
 var tableData = data;
+var tbody = document.querySelector("tbody");
+var date_time = document.querySelector("#datetime");
+var city = document.querySelector("#city");
+var state = document.querySelector("#state");
+var country = document.querySelector("#country");
+var shape = document.querySelector("#shape");
 
-//select the tbody in html to render dataset onto.
-var tbody = d3.select("tbody")
+var button_filter = document.querySelector("#filter-btn");
+var button_clear= document.querySelector("#clear-btn");
 
-//populates entire dataset onto html page.
-data.forEach((ufoSightings) => {
-    var row = tbody.append("tr");
-    Object.entries(ufoSightings).forEach(([key, value]) => {
-      var cell = row.append("td");
-      cell.text(value);
-    });
-  });
+button_filter.addEventListener("click", Filter_Click);
 
-//filter button
-var button = d3.select("#filter-btn");
+function Table(){
+    tbody.innerHTML = "";
+    
+    for(var i = 0; i< tableData.length; i++){
+        var address = tableData[i];
+        console.log(address)
+        var fields = Object.keys(address);
 
-//function for refresh stop.
-var dateFilter = () => {
-  //Enter key Fix
-  d3.event.preventDefault();
+        var row = tbody.insertRow(i);
+        for (var x= 0;x<fields.length;x++){
+            var field = fields[x];
+            var cell = row.insertCell(x);
+            cell.innerHTML = address[field];
+        }
+    }
+}
+
+function Filter_Click() {
+    var table_date = date_time.value;
+    var filter_state = state.value.trim().toLowerCase();
+    var filter_city = city.value.trim().toLowerCase();
+    var filter_country = country.value.trim().toLowerCase();
+    var filter_shape = shape.value.trim().toLowerCase();
   
-  //Define Input Element Variable
-  var inputElement = d3.select('#datetime');
-
-  // Get the value property of the input element
-  var inputValue = inputElement.property("value");
+    if (table_date != ""){
+      tableData = data.filter(function(address) {
+        var address_Date = address.datetime; 
+      return address_Date === table_date;
+      });
+    }
+    else {tableData};
+    
+    if(filter_state != ""){
+      tableData = tableData.filter(function(address){
+        var address_State = address.state;
+        return address_State === filter_state;
+      });
+    }
+    else{tableData};
   
-  // d3.event.prevent.Default()
+    if(filter_city != ""){
+      tableData = tableData.filter(function(address){
+        var address_City = address.city;
+        return address_City === filter_city;
+      });
+    }
+    else{tableData};
+  
+    if(filter_country != ""){
+        tableData = tableData.filter(function(address){
+        var address_Country = address.country;
+        return address_Country === filter_country;
+      });
+    }
+    else{tableData};
+  
+    if(filter_shape != "") {
+        tableData = tableData.filter(function(address){
+        var address_Shape = address.shape;
+        return address_Shape === filter_shape;
+      });
+    }
+    
+    else{tableData};
+  
+  Table();
+  }
+ 
+  // Render the table for the first time on page load
+  Table();
 
-  console.log(inputValue);
-  console.log(inputElement);
-
-  //need variable to store filtered data in.
-  var filteredData = tableData.filter(data => data.datetime === inputValue);
-  console.log(filteredData)
-
-  // Then, select the unordered list element by class name
-  var list = d3.select("tbody");
-
-  // remove any children from the list to
-  list.html("");
-
-  //append new results
-filteredData.forEach((filteredData) => {
-  var row = tbody.append("tr");
-  Object.entries(filteredData).forEach(([key, value]) => {
-  var cell = row.append("td");
-  cell.text(value);
-  });
-});
-
-};
-
-// button.on("click", handleInput);
-button.on('click', dateFilter);
-
-//Enter Key Fix
-d3.select("form").on('submit', dateFilter);
+  button_clear.addEventListener("click", function(){            //Clear button clears out the table everytime we press it. 
+    tbody.innerHTML = "";
+    
+})

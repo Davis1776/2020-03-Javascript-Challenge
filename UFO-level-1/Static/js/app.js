@@ -1,10 +1,10 @@
-// from data.js
+// From data.js
 var tableData = data;
 
-//select the tbody in html to render dataset onto.
+// Select the tbody in html to render dataset onto
 var tbody = d3.select("tbody")
 
-//populates entire dataset onto html page.
+// Populates entire dataset onto html page
 data.forEach((ufoSightings) => {
     var row = tbody.append("tr");
     Object.entries(ufoSightings).forEach(([key, value]) => {
@@ -13,15 +13,15 @@ data.forEach((ufoSightings) => {
     });
   });
 
-//filter button
+// Filter button
 var button = d3.select("#filter-btn");
 
-//function for refresh stop.
+// Function for refresh stop
 var dateFilter = () => {
-  //Enter key Fix
+  // Enter key Fix
   d3.event.preventDefault();
   
-  //Define Input Element Variable
+  // Define Input Element Variable
   var inputElement = d3.select('#datetime');
 
   // Get the value property of the input element
@@ -32,17 +32,17 @@ var dateFilter = () => {
   console.log(inputValue);
   console.log(inputElement);
 
-  //need variable to store filtered data in.
+  // Need variable to store filtered data in
   var filteredData = tableData.filter(data => data.datetime === inputValue);
   console.log(filteredData)
 
   // Then, select the unordered list element by class name
   var list = d3.select("tbody");
 
-  // remove any children from the list to
+  // Remove others from the list
   list.html("");
 
-  //append new results
+  // Append new results
 filteredData.forEach((filteredData) => {
   var row = tbody.append("tr");
   Object.entries(filteredData).forEach(([key, value]) => {
@@ -50,7 +50,6 @@ filteredData.forEach((filteredData) => {
   cell.text(value);
   });
 });
-
 };
 
 // button.on("click", handleInput);
