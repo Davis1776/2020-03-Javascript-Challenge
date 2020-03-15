@@ -1,7 +1,5 @@
 # <p align="center"> ![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png) </p>
 
-![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)
-
 # JavaScript and DOM Manipulation
 
 ## Background
@@ -47,6 +45,8 @@ Write code that will create a dynamic table based upon a sample json dataset of 
   3. `state`
   4. `country`
   5. `shape`
+
+# <p align="center"> ![Level 2 Filter](UFO-level-1/Static/images/FilterPanelScreenshot2.png) </p>
 
 - - -
 ## Tools used
