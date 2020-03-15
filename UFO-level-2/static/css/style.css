@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
+  /* font-family: Frijole, sans-serif;*/
 }
 
 html,
@@ -8,6 +8,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: Ubuntu, sans-serif;
 }
 
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
@@ -41,15 +42,54 @@ body {
 .navbar {
   padding: 5px;
   margin: 0;
+  font-family: Frijole, sans-serif;
 }
 
-/* This CSS styles the ufo icon in the navbar */
+/* This CSS styles the UFO icon in the bottom */
+.bottom-ufo {
+  position: absolute;
+  bottom: 0px;
+  left: 950px;
+  width: 35px;
+  color: white;
+}
+
+/* This CSS styles the UFO icon in the navbar */
 .nav-ufo {
   position: absolute;
   bottom: 5px;
-  left: 150px;
+  left: 250px;
   width: 35px;
   color: white;
+}
+.nav-ufo2 {
+  position: absolute;
+  bottom: 5px;
+  left: 300px;
+  width: 35px;
+  color: black;
+}
+.nav-ufo3 {
+  position: absolute;
+  bottom: 5px;
+  left: 350px;
+  width: 35px;
+  color: white;
+}
+.nav-ufo4 {
+  position: absolute;
+  bottom: 5px;
+  left: 400px;
+  width: 35px;
+  color: black;
+}
+.nav-ufo5 {
+  position: absolute;
+  bottom: 5px;
+  left: 450px;
+  width: 35px;
+  color: white;
+  animation: 3s linear 1s infinite running slidein;
 }
 
 /* Adding styles to the aside and filter form */
@@ -94,27 +134,36 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 550px;
+  height: 500px;
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/UFOimage2.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
+  color: black;
+  font-family: Frijole, sans-serif;
 }
 
 .hero h1 {
-  margin-top: 200px;
+  margin-top: 35px;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
+}
+
+.hero h2 {
+  margin-top: 35px;
+  font-size: 0.1rem;
+  animation: title 1.2s forwards linear;
+  animation-delay: 1.7s;
 }
 
 .hero p {
   font-size: 2rem;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
-  animation-delay: 1.2s;
+  animation-delay: 2.7s;
 }
 
 /* input placeholder color changes */
@@ -157,7 +206,7 @@ select {
   }
 
   #table-area tr td:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   #table-area tr td:last-child::after {

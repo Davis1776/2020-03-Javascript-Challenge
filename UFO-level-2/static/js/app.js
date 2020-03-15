@@ -29,6 +29,7 @@ function Table(){
     }
 }
 
+// Build function for date, state, city, country, shape (of UFO)
 function Filter_Click() {
     var table_date = date_time.value;
     var filter_state = state.value.trim().toLowerCase();
@@ -36,6 +37,7 @@ function Filter_Click() {
     var filter_country = country.value.trim().toLowerCase();
     var filter_shape = shape.value.trim().toLowerCase();
   
+    // Date filter
     if (table_date != ""){
       tableData = data.filter(function(address) {
         var address_Date = address.datetime; 
@@ -44,6 +46,7 @@ function Filter_Click() {
     }
     else {tableData};
     
+    // State filter
     if(filter_state != ""){
       tableData = tableData.filter(function(address){
         var address_State = address.state;
@@ -52,6 +55,7 @@ function Filter_Click() {
     }
     else{tableData};
   
+    // City filter
     if(filter_city != ""){
       tableData = tableData.filter(function(address){
         var address_City = address.city;
@@ -60,6 +64,7 @@ function Filter_Click() {
     }
     else{tableData};
   
+    // Country filter
     if(filter_country != ""){
         tableData = tableData.filter(function(address){
         var address_Country = address.country;
@@ -68,6 +73,7 @@ function Filter_Click() {
     }
     else{tableData};
   
+    // Shape of UFO filter
     if(filter_shape != "") {
         tableData = tableData.filter(function(address){
         var address_Shape = address.shape;
