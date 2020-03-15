@@ -1,5 +1,5 @@
 <p align="center">
-  ![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)
+  <img width="600" height="200" src=![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)>
 </p>
 
 ![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)
@@ -51,3 +51,25 @@ Write code that will create a dynamic table based upon a sample json dataset of 
   5. `shape`
 
 - - -
+## Tools used
+
+* Javascript
+
+* HTML
+
+* CSS
+
+* Json
+
+* D3.js
+
+* GitHub
+
+## Authors
+
+* **Michael Davis** - [Davis1776](https://github.com/Davis1776)
+
+## Acknowledgments
+
+* Hat tip to Triology Education Services for providing the sample data set and challenge guidelines.
+* Butler University Data Analytics and Visualization Executive Education program, instructors, and teammates for assistance.
