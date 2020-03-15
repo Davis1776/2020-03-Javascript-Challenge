@@ -1,8 +1,8 @@
 <p align="center">
-  <img width="600" height="200" src=![UFO Sightings](UFO-level-1/static/images/UFOScreenshot.png)>
+  <img width="600" height="200" src=![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)>
 </p>
 
-![UFO Sightings](UFO-level-1/static/images/UFOScreenshot.png)
+![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)
 
 # JavaScript and DOM Manipulation
 
