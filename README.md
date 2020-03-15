@@ -1,3 +1,9 @@
+<p align="center">
+  <img width="600" height="200" src=![UFO Sightings](images/UFOScreenshot.png)>
+</p>
+
+![UFO Sightings](images/UFOScreenshot.png)
+
 # JavaScript and DOM Manipulation
 
 ## Background
