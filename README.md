@@ -1,6 +1,4 @@
-#<p align="center">
-  <img width="600" height="200" src=![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)>
-</p>
+# <p align="center"><![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)></p>
 
 ![UFO Sightings](UFO-level-1/Static/images/UFOScreenshot.png)
 
